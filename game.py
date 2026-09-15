@@ -1,5 +1,5 @@
 from goblin import Goblin
-
+from hero import hero
 
 ARENA_NAME = "The Iron Square"
 
@@ -17,6 +17,9 @@ def main():
 
     print("But no hero has answered the call... yet.")
 
+
+    Hero=hero("Eren Yager")
+    print(f"{hero.name} enters the arena with{hero.health} health>")
 
 if __name__ == "__main__":
     main()
