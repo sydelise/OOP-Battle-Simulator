@@ -18,6 +18,7 @@ def battle(hero:Hero,enemy:Goblin):
 
 
 
+
 def main():
     """Open the arena and introduce its first opponent."""
     print(f"Welcome to the spectatcular {ARENA_NAME}!")
