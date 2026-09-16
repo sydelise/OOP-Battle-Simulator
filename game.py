@@ -31,7 +31,7 @@ def main():
 
 
     hero=Hero("Erenyager")
-    print(f"(Erenyager.name) enters the arena with{hero.health} health>")
+    print(f"{hero.name} enters the arena with{hero.health} health>")
     battle(hero,goblin)
 
 if __name__ == "__main__":
