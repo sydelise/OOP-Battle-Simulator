@@ -12,9 +12,9 @@ def battle(hero:Hero,enemy:Goblin):
               hero.take_damage(enemy_damage)
 
               if hero.is_alive():
-                print(f"{hero.name}wins!")
+                print(f"{hero.name} wins!")
         else:
-              print(f"{enemy.name}wins!") 
+              print(f"{enemy.name} wins!") 
 
 
 

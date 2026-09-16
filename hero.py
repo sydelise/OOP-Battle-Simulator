@@ -2,7 +2,7 @@ import random
 class Hero:
     def __init__(self, name):
         self.name = name
-        self.health = 130
+        self.health = 100
         self.attack_power = 50
 
     def attack(self):
