@@ -1,4 +1,4 @@
-
+import random
 
 class Enemy:
     """A base class for every enemy in the arena."""
