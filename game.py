@@ -1,5 +1,6 @@
 from goblin import Goblin
 from hero import Hero
+from boss import Boss
 
 ARENA_NAME = "The Iron Square"
 
@@ -37,3 +38,5 @@ def main():
 
 if __name__ == "__main__":
     main()
+
+bossIt=Boss("Hiroshima")

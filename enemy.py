@@ -1,18 +1,19 @@
 import random
 
+class Enemy:
+    """A base class for every enemy in the arena."""
 
-class Goblin(Enemy):
-    """A completed character class students can examine as an OOP example."""
-
-    def __init__(self,name):
-        super().__init__(name,health=100,attackPower=7)
+    def __init__(self, name, health, attack_power):
+        self.name = name
+        self.health = health
+        self.attack_power = attack_power
 
     def attack(self):
-        """Return a random amount of damage."""
         return random.randint(1, self.attack_power)
-    def stealGold(self,hero):
-        """GOBBOS TAKIN HEROS GOLD"""
-        self.gold= self.gold+ hero.gold
-        hero.gold=0
-        print("GET REKT NOOB")
-    
+
+    def take_damage(self, damage):
+        self.health = max(0, self.health - damage)
+        print(f"{self.name} takes {damage} damage. Health: {self.health}")
+
+    def is_alive(self):
+        return self.health > 0
